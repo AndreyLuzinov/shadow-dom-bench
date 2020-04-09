@@ -7,7 +7,7 @@ class Component extends HTMLElement {
   }
   
   connectedCallback() {
-	  const shadowRoot = this.attachShadow({mode: 'open'});
+	  const shadowRoot = this.attachShadow({mode: 'closed'});
 	  const root = currentDocument.createElement("button");
 	  root.innerText = "Button";
 	  shadowRoot.appendChild(root);
